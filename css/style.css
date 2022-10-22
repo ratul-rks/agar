@@ -1,0 +1,703 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+ list-style-type: none;
+ padding-left: 0 !important;
+}
+ol, ul {
+    padding-left: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+.aicon{
+    height: 2px;
+    width: 55px;
+    background-color: black;
+    position: relative;
+}
+.aicon::after{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: '';
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    border: 2px solid black;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+
+
+#nav_part{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #fff;
+    height: 100px;
+    width: 100%;
+}
+.nav_one{
+    display: flex;
+    align-items: center;
+}
+.nav_text{
+    width: 50%;
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    color: #fff;
+    justify-content: flex-end;
+}
+.information:last-child{
+    border-right: 0;
+}
+.information{
+    height: 20px;
+    padding: 0 20px;
+    border-right: 2px solid rgba(211, 196, 196, 0.5);
+}
+.information p{
+    position: relative;
+}
+.information p i{
+    position: absolute;
+    top: 8px;
+    right: -18px;
+}
+
+.logo1{
+    width: 50%;
+    padding: 10px 0;
+}
+#menu{
+    background-color: rgba(0, 0, 0, .5);
+    padding: 35px 0;
+}
+.menu_all ul{
+    display: flex;
+    color: #fff;
+}
+.menu_all ul li{
+    margin-right: 30px;
+    font-size: 18px;
+}
+.menu_all ul li i{
+    font-size: 15px;
+}
+
+.menu_part{
+    display: flex;
+}
+.menu_icon{
+    width: 30%;
+    color: #fff;
+    display: flex;
+}
+.menu_icon i{
+    font-size: 23px;
+    padding: 0 7px;
+}
+.menu_icon i:hover{
+    color: #188eb2;
+}
+.menu_all{
+    width: 70%;
+    align-items: center;
+}
+.menu_icon_search{
+    width: 45%;
+    text-align: end;
+}
+.menu_icon_search i{
+    font-size: 28px;
+}
+.menu_icon_search i:hover{
+    color: #188eb2;
+}
+.header_part{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/*================= banner part satrt =========================*/
+.banner_img{
+    padding-top: 350px;
+    padding-bottom: 80px;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+}
+.banner_play{
+    position: absolute;
+    top: 55%;
+    right: 26%;
+}
+.banner_mute{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: 90px;
+    background-color: #188eb2;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.banner_mute:hover{
+    background-color: rgb(240, 228, 228);
+}
+.banner_mute:hover.banner_mute i{
+    color: #188eb2;
+}
+.banner_mute:hover.banner_mute::after{
+    border: 3px solid #188eb2;
+}
+.banner_mute::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    height: 116%;
+    width: 116%;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.banner_mute i{
+    font-size: 25px;
+    color: #fff;
+}
+.banner_text{
+    color: #fff;
+    width: 485px;
+    line-height: 26px;
+}
+.banner_text h1{
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+}
+.banner_btn{
+    padding-top: 20px;
+}
+.banner_btn a{
+    padding: 15px 35px;
+    background-color: #188eb2;
+    color: #fff;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    display: inline-block;
+}
+.banner_btn a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+/*========== banner part end ====================*/
+/*===================== about part start ===================*/
+#about{
+    padding: 100px 0;
+}
+
+.about_img{
+    position: relative;
+}
+.about_one{
+    width: 100%;
+}
+.about_img_icon {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+}
+.about_img_icon .banner_mute {
+    height: 70px;
+    width: 70px;
+}
+ 
+.about_tow{
+    width: 75%;
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    z-index: 2;
+}
+.about_three{
+    position: absolute;
+    bottom: -32%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+
+}
+.about_right{
+    margin-left: 40px;
+}
+.about_head h4{
+    color: #188eb2;
+    padding-bottom: 20px;
+}
+.about_head{
+    position: relative;
+}
+.about_head::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 55px;
+    background-color: black;
+}
+.about_head::before{
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid black;
+    z-index: 2;
+}
+.about_hedaing{
+    padding: 12px 0;
+}
+.about_hedaing h1{
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+}
+.about_text p{
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 30px;
+}
+.about_prim{
+    display: flex;
+    margin-bottom: 15px;
+}
+.about_prim h4{
+    font-family: 'Philosopher', sans-serif;
+    margin-left: 10px;
+    font-size: 21px;
+}
+.about_prim i{
+    font-size: 20px;
+    color: #188eb2;
+    margin-top: 8px;
+}.about_last_btn{
+    margin-top: 20px;
+    display: inline-block;
+}
+.about_last_btn a{
+    font-family: 'DM Sans', sans-serif;
+    color: #fff;
+    padding: 12px 35px;
+    background-color: #188eb2;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+.about_last_btn a:hover{
+    color: black;
+    background-color: #f4f4f4;
+    border: 1px solid #188eb2;
+}
+/*===================== about part end ===================*/
+/*===================== partner part start ===================*/
+.band_head h1{
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 600;
+    font-size: 46px;
+    color: #3d3636;
+}
+.band_head h1 span{
+    color: #188eb2;
+    border-bottom: 2px solid #188eb2;
+}
+#band{
+    padding: 70px 0;
+}
+.band_img{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+.band_img img{
+    width: 10%;
+    margin: 20px 40px;
+}
+/*===================== partner part end ===================*/
+/*====================== SEARVICE PART START ==================*/
+#service{
+    padding: 100px 0;
+    background-color: #f4f4f4;
+}
+.service_head{
+    text-align: center;
+}
+.service_head .aicon{
+    margin: 15px auto;
+}
+.service_head h1{
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 600;
+    font-size: 44px;
+    color: #3d3636;
+}
+.service_one{
+    padding: 40px 0;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    text-align: center;
+   margin-top: 30px;
+}
+.src_one_icon{
+    margin: 0 auto;
+    height: 35px;
+    width: 35px;
+    background-color: #188eb2;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.src_one_icon i{
+    font-size: 22px;
+    color: #fff;
+}
+
+.service_one h4{
+    font-weight: 600;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 23px;
+    padding: 10px 0;
+}
+.rowpart{
+    display: flex;
+    justify-content: center;
+}
+.src_one{
+    margin-left: 20px;
+}
+.more_services{
+    text-align: center;
+    margin-top: 30px;
+}
+.more_services a{
+    padding: 15px 35px;
+    background-color: #188eb2;
+    color: #fff;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    display: inline-block;
+}
+.more_services a:hover{
+    color: #188eb2;
+    background-color: #fff;
+    border: 1px solid #188eb2;
+}
+
+/*====================== SEARVICE PART END ==================*/
+/*====================== team PART start ==================*/
+#team{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.team_head h4{
+    font-size: 20px;
+    color: #188eb2;
+    font-family: 'DM Sans', sans-serif;
+    padding-bottom: 8px;
+}
+.team_head h1{
+    font-family: 'Philosopher', sans-serif;
+    padding-top: 8px;
+    font-size: 34px;
+}
+.team_text1 p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.team_24,
+.team_exp{
+    padding: 10px 20px 10px 30px;
+    background-color: #f1f1f1;
+    border-left: 4px solid #188eb2;
+    position: relative;
+}
+.team_exp i{
+    position: absolute;
+    top: 18%;
+    right: 20px;
+    color: #188eb2;
+    font-size: 24px;
+}
+.team_exp h4{
+    font-size: 20px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 600;
+}
+.team_exp p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+}
+.team_24{
+    margin: 20px 0;
+    position: relative;
+}
+.team_24 i{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.team_24 h4{
+    font-size: 20px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 600;
+}
+.team_img{
+    position: relative;
+}
+.team_about_img{
+    position: absolute;
+    top: -90px;
+    right: 64px;
+    z-index: -1;
+}
+.team_about_img{
+    width: 33%;
+}
+
+.team_img img{
+    width: 100%;
+    margin-top: 60px;
+}
+/*====================== team PART END ==================*/
+/*================== project part start ======================*/
+#project{
+    padding: 100px 0;
+}
+.project_head{
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+.project_head .aicon{
+    margin: 0 auto;
+}
+.project_head h1{
+    font-family: 'Philosopher', sans-serif;
+    padding-top: 10px;
+    font-weight: 600;
+}
+.project_head h4{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 23px;
+    color: #188eb2;
+    padding-bottom: 10px;
+
+}
+.project_btn a{
+    padding: 8px 25px;
+    border-radius: 8px;
+    border: 1px solid #188eb2;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+/*================== project part end ======================*/
+/*====================== COUNTER PART START ==================*/
+#counter{
+    padding: 60px;
+    background: url(../images/counter-bg-1-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.counter_one{
+    color: #fff;
+    text-align: center;
+}
+.counter_one img{
+   margin-bottom: 15px;
+}
+.counter_one h1{
+    font-size: 46px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+}
+.counter_one h5{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+.counter_item{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+/*====================== COUNTER PART END ==================*/
+/*====================== contact us bg PART start ==================*/
+#contact_us{
+    padding: 60px 0;
+}
+.contact_us_bg{
+    padding: 100px 0;
+    background: url(../images/cta-bg-1-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caontact_us_item{
+    color: #fff;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+.caontact_us_item h1{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 46px;
+    font-weight: 600
+}
+.cnt_us_bg{
+    margin-top: 20px;
+}
+.cnt_us_bg a{
+    display: inline-block;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background-color: #188eb2;
+}
+.cnt_us_bg a:hover{
+    color: black;
+    background-color: #fff;
+}
+/*====================== contact us bg PART END ==================*/
+ /*======================= BOTTOM PART START =====================*/
+    #bottom{
+        padding: 100px 0;
+    }
+    .bottom_head{
+        text-align: center;
+    }
+    .bottom_head p{
+        font-family: 'DM Sans', sans-serif;
+        padding: 20px 0;
+        font-weight: 500;
+    }
+.bottom_item h4{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.bottom_item ul li{
+    padding-top: 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.bottom_item ul li i{
+    margin-right: 6px;
+    font-size: 13px;
+}
+.bottom_all{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom_head_icon{
+    display: flex;
+    justify-content: center;
+}
+.bottom_fc{
+    height: 40px;
+    width: 40px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.bottom_fc i{
+    color: #188eb2;
+    font-size: 21px;
+}
+
+ /*======================= BOTTOM PART end =====================*/
